@@ -97,7 +97,7 @@ exports.leopardizer = function leopardizer(newFilters) {
     // If this is a text node, attempt substitutions on it
     //console.log(node)
     if (node.type == 'text') {
-      replaceTextContent(node);
+      node.data = performSubstitutions(node.data);
     // If this is an ordinary content node, recurse any children
     // ("ordinary" here means a node where text content doesn't have meaning
     //  beyond human text - <style> and <script> are the only nodes of this
@@ -111,15 +111,6 @@ exports.leopardizer = function leopardizer(newFilters) {
       for (var i = 0; i < length; ++i){
         changeTextNodes(childNodes[i]);
       }
-    }
-  }
-
-  function replaceTextContent(node) {
-    // TODO: See if we need this check with Cheerio
-    // (the original live DOM version definitely needs it)
-
-    if (~node.data.search(allFilterRegexp)) {
-      node.data = performSubstitutions(node.data);
     }
   }
 
