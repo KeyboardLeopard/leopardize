@@ -1,0 +1,29 @@
+{
+  "name": "leopardize",
+  "version": "0.0.0",
+  "description": "An NPM/browserify module for running a static version of the replacement logic from KeyboardLeopard",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KeyboardLeopard/leopardize.git"
+  },
+  "keywords": [
+    "word",
+    "replacement"
+  ],
+  "author": "Stuart P. Bentley <stuart@testtrack4.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KeyboardLeopard/leopardize/issues"
+  },
+  "homepage": "https://github.com/KeyboardLeopard/leopardize",
+  "dependencies": {
+    "cheerio": "^0.18.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+}
