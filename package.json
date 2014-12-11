@@ -1,6 +1,6 @@
 {
   "name": "leopardize",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An NPM/browserify module for running a static version of the replacement logic from KeyboardLeopard",
   "main": "index.js",
   "scripts": {
